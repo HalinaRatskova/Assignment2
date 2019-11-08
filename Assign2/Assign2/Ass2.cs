@@ -1,20 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Assign2
 {
-    class Program
+    class Ass2
     {
-        static void Main(string[] args)
+        public void frequencyArray(int[] myArray)
         {
-
-            int[] myArray = new int[] { 1, 2, 3, 1, 1,3,3,3,5 };
             int[] frequency = new int[myArray.Length];
 
             for (int i = 0; i < myArray.Length; i++)
             {
                 int counter = 1;
 
-                for (int j =i+1; j < myArray.Length; j++)
+                for (int j = i + 1; j < myArray.Length; j++)
                 {
                     if (myArray[i] == myArray[j])
                     {
@@ -33,9 +33,8 @@ namespace Assign2
                 if (frequency[k] != -1)
                     Console.WriteLine("Array element   " + myArray[k] + "    |    " + "Frequency " + frequency[k]);
             }
-             Console.ReadLine();
+            Console.ReadLine();
+
         }
     }
 }
-
-
